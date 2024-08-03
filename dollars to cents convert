@@ -1,0 +1,9 @@
+dollar1 = parse(Int, readline())
+cent1 = parse(Int, readline())
+dollar2 = parse(Int, readline())
+cent2 = parse(Int, readline())
+total_cents = (dollar1 * 100 + cent1) + (dollar2 * 100 + cent2)
+total_dollars = total_cents ÷ 100  
+remaining_cents = total_cents % 100 
+println(total_dollars)
+println(remaining_cents)
