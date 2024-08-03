@@ -1,0 +1,4 @@
+num = parse(Int, readline())
+first_digit = num / 1000
+last_digit = num % 10
+println(trunc(Int, first_digit) + last_digit)
