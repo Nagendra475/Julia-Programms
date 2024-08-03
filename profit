@@ -1,0 +1,7 @@
+a = parse(Int, readline()) 
+b = parse(Int, readline()) 
+c = parse(Int, readline())
+revenue = a * b 
+cost = a * c + 100 
+profit = revenue - cost 
+println(profit)
