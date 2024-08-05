@@ -1,0 +1,2 @@
+char = readline()
+println(Int(char[1]))
