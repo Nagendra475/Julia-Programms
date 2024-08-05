@@ -1,0 +1,4 @@
+num = parse(Float64, readline())
+rounded_up = ceil(num)
+rounded_down = floor(num)
+println("$num $rounded_up $rounded_down")
