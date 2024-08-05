@@ -1,0 +1,21 @@
+println("Enter the principal amount borrowed by Leena: ")
+principal = parse(Float64, readline())
+
+println("Enter the rate of interest: ")
+rate_of_interest = parse(Float64, readline())
+
+println("Enter the number of years: ")
+years = parse(Float64, readline())
+
+interest = (principal * rate_of_interest * years) / 100
+
+total_amount = principal + interest
+
+discount = interest * 2 / 100
+
+final_settlement = total_amount - discount
+
+println(round(interest, digits=2))
+println(round(total_amount, digits=2))
+println(round(discount, digits=2))
+println(round(final_settlement, digits=2))
