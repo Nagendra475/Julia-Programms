@@ -1,0 +1,6 @@
+length = parse(Int, readline())
+breadth = parse(Int, readline())
+perimeter = 2 * (length + breadth)
+area = length * breadth
+println("The required length is ", perimeter, " m")
+println("The required area of carpet is ", area, " sqm")
