@@ -1,0 +1,26 @@
+flipkartPrice = parse(Int, readline())
+flipkartDiscount = parse(Int, readline())
+flipkartShipping = parse(Int, readline())
+snapdealPrice = parse(Int, readline())
+snapdealDiscount = parse(Int, readline())
+snapdealShipping = parse(Int, readline())
+amazonPrice = parse(Int, readline())
+amazonDiscount = parse(Int, readline())
+amazonShipping = parse(Int, readline())
+
+flipkartFinalPrice = flipkartPrice - (flipkartPrice * flipkartDiscount / 100) + flipkartShipping
+snapdealFinalPrice = snapdealPrice - (snapdealPrice * snapdealDiscount / 100) + snapdealShipping
+amazonFinalPrice = amazonPrice - (amazonPrice * amazonDiscount / 100) + amazonShipping
+
+println("In Flipkart: Rs.", flipkartFinalPrice)
+println("In Snapdeal: Rs.", snapdealFinalPrice)
+println("In Amazon: Rs.", amazonFinalPrice)
+
+if flipkartFinalPrice <= snapdealFinalPrice && flipkartFinalPrice <= amazonFinalPrice
+    println("Choose Flipkart")
+elseif snapdealFinalPrice <= flipkartFinalPrice && snapdealFinalPrice <= amazonFinalPrice
+    println("Choose Snapdeal")
+else
+    println("Choose Amazon")
+end
+
